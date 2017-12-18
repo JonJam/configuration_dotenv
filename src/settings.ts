@@ -7,4 +7,4 @@ if (process.env.NODE_ENV !== "production") {
   dotenv.config();
 }
 
-export const secretKey = process.env.SECRET_KEY;
+export const secretKey = process.env.SECRET_KEY || "Fallback value";
